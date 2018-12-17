@@ -1,0 +1,8 @@
+#!/bin/bash
+source ../container-bin
+
+function container-php()
+{
+  export DOCKER_IMAGE=php:7.2
+  container-bin $@
+}

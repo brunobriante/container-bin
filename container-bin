@@ -1,0 +1,6 @@
+#!/bin/bash
+
+function container-bin()
+{
+  docker run -it --rm -v $(pwd -P):/app -w=/app $DOCKER_IMAGE $@
+}

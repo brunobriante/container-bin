@@ -1,0 +1,8 @@
+#!/bin/bash
+source ../container-bin
+
+function container-node()
+{
+  export DOCKER_IMAGE=node:10
+  container-bin $@
+}
